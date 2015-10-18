@@ -110,7 +110,7 @@ impl Machine {
             let o1 = try!(self.get(operands[0], operands[1]));
             let o2 = try!(self.get(operands[2], operands[3]));
             self.set(operands[2], operands[3], f(o1, o2))
-        }
+    }
 
     pub fn step(&mut self) -> Result<(), Error> {
         let mut instr = [0; 5];
