@@ -74,7 +74,8 @@ num  | Opcode | Operand 1 | Operand 2 |Description
 9 | AND    | Source | Dest | Computes (Dest & Source). Stores the result in Dest
 10| OR     | Source | Dest | Computes (Dest | Source). Stores the result in Dest
 11| IF     | Condition | | If Condition is 0 the next operation is skipped
-12| Call   | Location | WriteNext | Sets the __Instruction Pointer__ to Location.  Writes the previous __Instruction Pointer__ to WriteNext.
+12| CALL   | Location | WriteNext | Sets the __Instruction Pointer__ to Location.  Writes the previous __Instruction Pointer__ to WriteNext.
+13| MOVE   | Source | Dest | Sets Source to Dest
 
 ## Examples
 ```
